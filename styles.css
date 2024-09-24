@@ -1,0 +1,150 @@
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f0f4f8;
+   color: #333;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+ }
+ #errorEXIF{
+   font-size: 2.1em;
+   color: green;
+   margin-top: 10px;
+   text-align: center;
+   padding: 10px;
+   border: 1px solid #007bff;
+   border-radius: 5px;
+   background-color: #f9f9f9;
+ }
+ 
+ h1 {
+   color: #007bff;
+ }
+ 
+ #fileInput {
+   display: none; /* Masquer l'input par défaut */
+ }
+ 
+ .file-label {
+   padding: 10px 20px;
+   border: 2px solid #007bff;
+   border-radius: 5px;
+   background-color: #007bff;
+   color: white;
+   cursor: pointer;
+   transition: background-color 0.3s, border-color 0.3s;
+   font-size: 16px;
+   font-weight: bold;
+ }
+ 
+ .file-label:hover {
+   background-color: #0056b3;
+   border-color: #0056b3;
+ }
+ 
+ .privacy-notice {
+   font-size: 1.1em;
+   color: #555;
+   margin-top: 10px;
+   text-align: center;
+   padding: 10px;
+   border: 1px solid #007bff;
+   border-radius: 5px;
+   background-color: #f9f9f9;
+ }
+ 
+ #imagePreview {
+   margin-top: 20px;
+   max-width: 100%;
+   height: auto;
+   border: 2px solid #007bff;
+   border-radius: 5px;
+   display: none;
+ }
+ 
+ table {
+   margin-top: 20px;
+   border-collapse: collapse;
+   width: 100%;
+   max-width: 600px;
+ }
+ 
+ th,
+ td {
+   border: 1px solid #007bff;
+   padding: 10px;
+   text-align: left;
+ }
+ 
+ th {
+   background-color: #007bff;
+   color: white;
+ }
+ 
+ #metadataOutput {
+   margin-top: 20px;
+   background-color: #e8f0fe;
+   border: 1px solid #007bff;
+   border-radius: 5px;
+   padding: 10px;
+   white-space: pre-wrap;
+   max-width: 600px;
+   width: 100%;
+ }
+ 
+ .risk-indicator {
+   margin-top: 20px;
+   padding: 10px;
+   border-radius: 5px;
+   display: none; /* Masquer par défaut */
+ }
+ 
+ .low-risk {
+   background-color: #d4edda; /* Vert clair */
+   color: #155724; /* Texte vert foncé */
+ }
+ 
+ .medium-risk {
+   background-color: #fff3cd; /* Orange clair */
+   color: #856404; /* Texte orange foncé */
+ }
+ 
+ .high-risk {
+   background-color: #f8d7da; /* Rouge clair */
+   color: #721c24; /* Texte rouge foncé */
+ }
+ 
+ #removeExifButton {
+   margin-top: 20px;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   background-color: #dc3545;
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+   display: none; /* Masquer par défaut */
+ }
+ 
+ #downloadButton {
+   margin-top: 20px;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   background-color: #28a745;
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+   display: none; /* Masquer par défaut */
+ }
+ 
+ footer {
+   margin-top: 40px;
+   font-size: 0.9em;
+   text-align: center;
+   color: #555;
+ }
+ 

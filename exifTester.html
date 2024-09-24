@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Analyseur de métadonnées d'image. Visualisez et supprimez les informations EXIF sans sauvegarde sur serveur, garantissant la confidentialité de vos données."
+    />
+    <meta
+      name="keywords"
+      content="métadonnées, image, EXIF, analyseur, confidentialité, traitement local, aucune sauvegarde, suppression EXIF"
+    />
+    <meta name="author" content="Votre Nom" />
+    <title>Analyseur de Métadonnées d'Image</title>
+    <h1>Analyseur de Métadonnées d'Image</h1>
+    <p class="privacy-notice">
+      Aucune image ne sera envoyée vers un serveur. Toutes les métadonnées sont
+      traitées localement sur votre appareil pour garantir votre
+      confidentialité.
+    </p>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/exifr/dist/lite.umd.js"></script>
+  </head>
+  <body>
+    <label class="file-label" for="fileInput">Télécharger une Image</label>
+    <input type="file" id="fileInput" accept="image/*" />
+
+    <div id="riskIndicator" class="risk-indicator"></div>
+    <img id="imagePreview" alt="Image Preview" />
+
+    <table id="metadataTable" style="display: none">
+      <thead>
+        <tr>
+          <th>Clé</th>
+          <th>Valeur</th>
+        </tr>
+      </thead>
+      <tbody id="metadataBody"></tbody>
+    </table>
+    <p id="errorEXIF" style="display: none;">Votre photo ne contient aucune métadonnée.</p>
+    <button id="removeExifButton">Supprimer les Métadonnées EXIF</button>
+    <button id="downloadButton">Télécharger l'Image sans EXIF</button>
+
+    <footer>
+      Réalisé par
+      <a href="https://pierrepicarddev.fr" target="_blank">pierrepicarddev</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
