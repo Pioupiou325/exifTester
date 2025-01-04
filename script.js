@@ -26,7 +26,7 @@ document
         exifr
           .parse(file)
            .then((metadata) => {
-              console.table(metadata);
+              
             const metadataBody = document.getElementById("metadataBody");
              metadataBody.innerHTML = ""; // Vider le tableau avant de remplir
              
