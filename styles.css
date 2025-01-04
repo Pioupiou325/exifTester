@@ -152,4 +152,26 @@ footer {
   #imagePreview {
     width: 100%;
   }
+  table {
+    font-size: 14px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Pour éviter les espaces entre les cellules */
+  }
+
+  table th,
+  table td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+  }
+
+  table td:first-child {
+    width: 30%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
